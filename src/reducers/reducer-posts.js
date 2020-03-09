@@ -10,6 +10,9 @@ export default function ReducerPosts(state=[], action){
                 return (post.id !== action.payload) 
             })
 
+        case AT_POSTS.CREATE: 
+            return [action.payload,...state]
+
         default:
             return state
     }
