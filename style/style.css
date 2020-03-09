@@ -1,0 +1,13 @@
+.fade-enter{
+    opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active{
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.fade-leave.fade-leave-active{
+    transform: translate(-1000%);
+    transition: transform 5000ms ease-out;
+}
